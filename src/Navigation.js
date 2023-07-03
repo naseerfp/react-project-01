@@ -11,12 +11,16 @@ function Navigation() {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <Link className="nav-item active" to="/">
-              Home
-            </Link>
             <li className="nav-item">
-              <Link to="/Users">
-                Users
+              <Link className="nav-link  active" to="/">
+                Home
+
+              </Link>
+            </li> 
+
+            <li className="nav-item">
+              <Link to="/friends" className="nav-link">
+                Friends
               </Link>
 
             </li>

@@ -1,6 +1,6 @@
 import React from "react";
 import TextForm from "./TextForm";
-import Message from "./Users";
+import Message from "./FriendsDispaly";
 function Homepage() {
     return (
         <div>

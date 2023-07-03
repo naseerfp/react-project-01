@@ -1,11 +1,11 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Navigation from './Navigation';
 import Homepage from './Homepage';
-import Users from './Users';
-
+import FriendsDispaly from './FriendsDispaly';
+import FriendDetails from './FriendDetails';
 
 
 function App() {
@@ -19,15 +19,18 @@ function App() {
       <Header />
       <Navigation />
    
-        <Switch>
-          <Route path="/" exact={true}>
-            <Homepage />
+        <Routes>
+          <Route path="/" element={<Homepage />}>
+          
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/friends" element={<FriendsDispaly />}>
+   
           </Route>
+          <Route path="/details/:id" element={<FriendDetails />}>
+   
+   </Route>
 
-        </Switch>
+        </Routes>
         <Footer />  
 
         </div>
